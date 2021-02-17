@@ -35,3 +35,5 @@ weekly_cases = {key: value*pop_data[key]/100000 for key, value in covid_data.ite
 # Daily total case 
 daily_cases = {key:  round(value/7, 3) for key, value in weekly_cases.items()}
 
+print(daily_cases)
+
