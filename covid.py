@@ -37,3 +37,14 @@ daily_cases = {key:  round(value/7, 3) for key, value in weekly_cases.items()}
 
 print(daily_cases)
 
+df_daily= pd.DataFrame([daily_cases])
+df_daily = df_daily.T
+df_daily = df_daily.astype(int)
+df_daily.to_html()
+
+
+df_weekly = pd.DataFrame([weekly_cases])
+df_weekly = df_weekly.T
+df_weekly = df_weekly.astype(int)
+df_weekly.to_html()
+
